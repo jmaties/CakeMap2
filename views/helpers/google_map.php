@@ -88,10 +88,11 @@ class GoogleMapHelper extends Helper {
 							marker$i.html = \"$point[title]$point[html]\";
 							GEvent.addListener(marker".$i.", \"click\", 
 							function() {
-								map.setCenter(marker$i.getPoint(),14); 
+								//map.setCenter(marker$i.getPoint(),14);
+								map.panTo(marker$i.getPoint());
 								marker$i.openInfoWindowHtml(marker$i.html);
 							});";
-						$data[$n][$keys[0]]['js']="map.setCenter(marker$i.getPoint(),14);marker$i.openInfoWindowHtml(marker$i.html);";
+						$data[$n][$keys[0]]['js']="map.setCenter(map.panTo(marker$i.getPoint());marker$i.openInfoWindowHtml(marker$i.html);";
 						$i++;
 					}
 				}
