@@ -38,13 +38,8 @@ class GoogleMapHelper extends Helper {
 		if (GBrowserIsCompatible()) 
 		{	
 			var map = new GMap2(document.getElementById(\"map\"));
-			//map.addControl(new GLargeMapControl());
-			//map.addControl(new GMapTypeControl());
-			//map.addControl(new GOverviewMapControl());
 			map.setUIToDefault();
-			//map.setMapType(map.getMapTypes()[".$default['type']."]);
 			map.setCenter(new GLatLng(".$default['lat'].", ".$default['long']."), ".$default['zoom'].");
-			//map.centerAndZoom(new GPoint(".$default['long'].", ".$default['lat']."), ".$default['zoom'].");
 		}
 		//]]>
 		</script>";
@@ -90,7 +85,6 @@ class GoogleMapHelper extends Helper {
 							var point".$i." = new GPoint(".$point['longitude'].",".$point['latitude'].");
 							var marker".$i." = new GMarker(point".$i.",icon);
 							map.addOverlay(marker".$i.");
-							//map.setCenter(point".$i.", 3);
 							marker$i.html = \"$point[title]$point[html]\";
 							GEvent.addListener(marker".$i.", \"click\", 
 							function() {
