@@ -4,8 +4,11 @@
  * Copyright (c) 2005 Garrett J. Woodworth : gwoo@rd11.com
  * rd11,inc : http://rd11.com
  *
- * @author      gwoo <gwoo@rd11.com>
- * @version     0.10.1311_pre_beta
+ * CakeMap2 -- a google maps integrated application built on CakePHP framework.
+ * Javier Maties - javiermaties@gmail.com
+ *
+ * @author      javiermaties <javiermaties@gmail.com>
+ * @version     0.1
  * @license     OPPL
  *
  * Modified by 	Mahmoud Lababidi <lababidi@bearsontherun.com>
