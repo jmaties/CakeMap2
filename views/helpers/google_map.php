@@ -92,7 +92,7 @@ class GoogleMapHelper extends Helper {
 								map.panTo(marker$i.getPoint());
 								marker$i.openInfoWindowHtml(marker$i.html);
 							});";
-						$data[$n][$keys[0]]['js']="map.setCenter(map.panTo(marker$i.getPoint());marker$i.openInfoWindowHtml(marker$i.html);";
+						$data[$n][$keys[0]]['js']="map.panTo(marker$i.getPoint());marker$i.openInfoWindowHtml(marker$i.html);";
 						$i++;
 					}
 				}
